@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <script src="script.js" defer></script>
+    <style>
+        .movie-list {
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .movie-list-item {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        .movie-list-item:hover {
+            background-color: #f0f0f0;
+        }
+        #movieDetails {
+            margin-top: 20px;
+            max-width: 300px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form id="searchForm">
+            <label for="searchInput">Enter Movie Title:</label>
+            <input type="text" id="searchInput" name="searchInput">
+        </form>
+    </div>
+    <div id="movieList" class="movie-list"></div>
+    <div id="movieDetails"></div>
+</body>
+</html>
